@@ -3,28 +3,29 @@ JavaScript script to Download videos, transcripts and exercise files from Linked
 
 ## How it works
 
-You need a Linkedin Premium Account.<br/>
-You need to have Node.js installed.<br/>
-Download the project.<br/>
-Open the terminal in the project folder and type:
+- You need a LinkedIn Premium Account.
+- You need to have Node.js installed.
+- Clone the Repository
+
+
+#### Download All Dependencies
+
+Go to the project directory using terminal & run
 
 ```sh
 npm install
 ```
 
-to download necessary modules. (N.B. Puppeteer is a biiiig module).<br/>
-Modifiy the .env file adding your Linkedin username(email) and password.<br/>
-In order to properly set the LINKEDIN_COURSE, open the course you are interested in, e.g.:
+#### Update the `.env` file adding your Linkedin username(email), password, course-url
 
 ```sh
-# put 'learning-react-js-2018' if url is 
-https://www.linkedin.com/learning/learning-react-js-2018
+LINKEDIN_EMAIL=<email>
+LINKEDIN_PASSWORD=<password>
+LINKEDIN_COURSE=<course-url>
+# put LINKEDIN_COURSE=learning-react-js-2018 if url is https://www.linkedin.com/learning/learning-react-js-2018
 ```
 
-```sh
-$ node-js-deploying-applications
-```
-Now, execute the index.js file to download the course:
+#### Download the course!
 
 ```sh
 $ node ./index.js
